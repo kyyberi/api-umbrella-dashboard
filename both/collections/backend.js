@@ -665,6 +665,15 @@ ApiBackends.allow({
   fetch: ['managerIds']
 });
 
+ApiBackends.helpers({
+  managers: function () {
+    // http://docs.mongodb.org/manual/reference/operator/query/in/
+    // query by managerIds
+    // Something like that
+    //return Meteor.Users.find({_id :{$in: this.managerIds}})
+  }
+});
+
 SimpleSchema.messages({
   // RegEx messages
   regEx: [
