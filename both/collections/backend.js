@@ -667,10 +667,7 @@ ApiBackends.allow({
 
 ApiBackends.helpers({
   managers: function () {
-    // http://docs.mongodb.org/manual/reference/operator/query/in/
-    // query by managerIds
-    // Something like that
-    //return Meteor.Users.find({_id :{$in: this.managerIds}})
+    return Meteor.users.find({_id :{$in: this.managerIds}});
   }
 });
 
