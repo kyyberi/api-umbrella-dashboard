@@ -95,6 +95,9 @@
   "manage-ApiBackends-View": "View",
   "manage-ApiBackends-Edit": "Edit",
 
+  /*Manage Api Backends Managers*/
+  "manage-ApiBackends-Managers-Title": "Managers",
+
   /*Api Backend Status*/
   "apiBackend-Status-Title": "Status",
   "apiBackend-Status-Updated": "Updated:",
