@@ -14,7 +14,7 @@ Schemas.FeedbackAnswersSchema = new SimpleSchema({
       placeholder: 'Type your message here'
     }
   },
-  author: {
+  authorId: {
     type: String,
     autoValue: function () {
       return Meteor.userId()
