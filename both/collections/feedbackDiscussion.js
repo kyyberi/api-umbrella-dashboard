@@ -1,6 +1,9 @@
-FeedbackAnswers = new Mongo.Collection('feedbackAnswers');
+FeedbackDiscussion = new Mongo.Collection('feedbackDiscussion');
 
 Schemas.FeedbackAnswersSchema = new SimpleSchema({
+  feedbackId: {
+    type: String
+  },
   message: {
     type: String,
     label: "Answer to the message",
