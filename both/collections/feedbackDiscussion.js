@@ -4,6 +4,12 @@ Schemas.FeedbackAnswersSchema = new SimpleSchema({
   feedbackId: {
     type: String
   },
+  authorId: {
+    type: String,
+    autoValue: function () {
+      return Meteor.userId()
+    }
+  },
   message: {
     type: String,
     label: "Answer to the message",
@@ -12,12 +18,6 @@ Schemas.FeedbackAnswersSchema = new SimpleSchema({
     autoform: {
       rows: 5,
       placeholder: 'Type your message here'
-    }
-  },
-  authorId: {
-    type: String,
-    autoValue: function () {
-      return Meteor.userId()
     }
   },
   createdAt: {
